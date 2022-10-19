@@ -1,19 +1,25 @@
-<div class="mb-3">
-    <label for="title" class="form-label">Titulo</label>
-    <input required type="text" name="title" class="form-control" id="title" value="<%= article.title%> ">
+<div class="input-group">
+    <label for="theme" class="input-group__label">Tema</label>
+    <input id="theme" type="text" class="input-group__input" placeholder="Ingrese sobre que tema va a hablar">
 </div>
-<div class="mb-3">
-    <label for="description" class="form-label">Descripción</label>
-    <textarea class="form-control" name="description" id="description" rows="3"><%= article.description%> </textarea>
+
+<div class="input-group">
+    <label for="title" class="input-group__label" >Titulo</label>
+    <input required type="text" name="title" class="input-group__input" id="title" value="<%= article.title%>" placeholder="Ingrese un titulo para el post">
 </div>
-<div class="mb-3">
-    <label for="markdown" class="form-label">Resumen</label>
-    <textarea required class="form-control" name="markdown" id="markdown" rows="3"><%= article.markdown%></textarea>
+<div class="input-group-textArea">
+    <label for="description" class="input-group__label">Descripción</label>
+    <textarea class="input-group-textArea__textArea" name="description" id="description" rows="3"> <%= article.description%> </textarea>
+</div>
+<div class="input-group-textArea">
+    <label for="markdown" class="input-group__label">Resumen</label>
+    <textarea required class="input-group-textArea__textArea" name="markdown" id="markdown" rows="3"><%= article.markdown%></textarea>
 </div>
 <br>
-<a href="/" class="btn btn-danger">
+<a href="/" class="button btn-danger">
     Cancelar
 </a>
-<button type="submit" class="btn btn-success">
+<button type="submit" class="button btn-success">
     Guardar
 </button>
+

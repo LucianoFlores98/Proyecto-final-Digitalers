@@ -1,0 +1,99 @@
+.form{
+
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+  .input-group{
+
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-group__label{
+
+    margin-bottom: 0.5em;
+}
+
+.input-group__input{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(66, 66, 66);
+    border: none;
+    border-radius: 4px;
+    height: 2em;
+    padding-left: 8px;
+
+}
+
+.input-group__input:focus{
+
+    outline: none ;
+    border:1px solid rgb(111, 0, 255);
+    box-shadow: 0 0 10px #d8b8f7;
+    
+}
+.input-group-textArea__textArea{
+
+    width: 100%;
+    color: rgb(66, 66, 66);
+    resize: none;
+    border-radius: 4px; 
+
+}
+
+.input-group-textArea__textArea:focus{
+
+    outline: none ;
+    border:1px solid rgb(111, 0, 255);
+    box-shadow: 0 0 10px #d8b8f7;
+
+}
+
+.button{
+
+    height: 3em;
+    width: 100%;
+    background-color:rgba(27, 0, 53, 0.959);
+    border-width: 0;
+    border-radius: 5px;
+    margin-top: 2em;
+    transition: all .2s;
+    
+}
+
+
+
+.button:hover{
+
+    background-color: rgba(87, 0, 168, 0.959);
+    cursor: pointer;
+}
+body{
+
+    background-image: linear-gradient(180deg,rgba(34, 0, 88, 0.986),rgba(245, 245, 245, 0)),url(https://images.pexels.com/photos/4587992/pexels-photo-4587992.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+
+}
+
+.container{
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 720px;
+    padding-bottom: 3em;
+    margin-bottom: 15em;
+}
+
+.header{
+
+    margin-top: 2em;
+    text-align: center;
+
+}
