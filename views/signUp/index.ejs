@@ -72,17 +72,17 @@
         <main class="main">
 
             <h2>Registro de Usuario</h2>
-            <form id="form-user" class="form" method="post">
+            <form id="form-user" class="form" method="post" action="/signUp">
 
                 <div class="input-group input-half margin-right">
                     <label id="name-label" for="name" class="input-group__label">Nombres*</label>
-                    <input id="name" type="text" class="input-group__input" placeholder="Ingrese su nombre" required>
+                    <input id="name" type="text" class="input-group__input" placeholder="Ingrese su nombre" name="names" required>
                 </div>
 
                 <div class="input-group input-half">
                     
                     <label for="last_name" class="input-group__label">Apellido*</label>
-                    <input id="last_name" type="text" class="input-group__input" placeholder="Ingrese su apellido" required>
+                    <input id="last_name" type="text" class="input-group__input" placeholder="Ingrese su apellido" name="lastName" required>
 
                 </div>
 
@@ -90,7 +90,7 @@
 
                     <label for="dropdown2" class="input-group__label">Pais</label>
 
-                    <select id="dropdown2" name="dropdown" class="input-group__input input-group-dropdown__select">
+                    <select id="dropdown2" name="dropdown_country" class="input-group__input input-group-dropdown__select">
 
                         <option value="value="" selected disabled hidden">Seleccione el país</option>
                         <option value="AF">Afganistán</option>
@@ -335,14 +335,14 @@
                 <div class="input-group input-full">
 
                     <label id="email-label" for="email" class="input-group__label">Email*</label>
-                    <input id="email" type="email" class="input-group__input" placeholder="Ingrese su email" required>
+                    <input id="email" type="email" class="input-group__input" placeholder="Ingrese su email" name="e_mail" required>
 
                 </div>
 
                 <div class="input-group input-half margin-right" required>
 
                     <label id="pass-label" for="pass" class="input-group__label">Clave*</label>
-                    <input id="pass" type="password" class="input-group__input" min="8" max="40" placeholder="Ingrese su clave (Minimo 8 caracteres)" required>
+                    <input id="pass" type="password" class="input-group__input" min="8" max="40" placeholder="Ingrese su clave (Minimo 8 caracteres)" name="password" required>
 
                 </div>
 
