@@ -3,6 +3,10 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 const Article = require('../models/article')
 const articleRouter = require('../routes/articles')
+const signUpRouter = require('../routes/signUp')
+const biographyRouter = require('../routes/biography')
+const contactRouter = require('../routes/contact')
+const projectsRouter = require('../routes/projects')
 const methodOverride = require('method-override')
 
 const app = express()
@@ -28,6 +32,14 @@ mongoose
     .catch((err)=> console.error(err))
 
 app.use('/articles', articleRouter);
+
+app.use('/signUp',signUpRouter);
+
+app.use('/biography', biographyRouter);
+
+app.use('/projects',projectsRouter);
+
+app.use('/contact',contactRouter);
 
 app.use('/public/', express.static('./public/'))
 

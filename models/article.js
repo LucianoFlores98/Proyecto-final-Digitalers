@@ -35,7 +35,8 @@ const articleSchema = new mongoose.Schema(
             type: String 
         },
         theme:{
-            type: String
+            type: String,
+            required:true
         }
     },
     {

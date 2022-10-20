@@ -21,10 +21,10 @@
 
         <div class="nav__links">
             <ul>
-                <li class="nav__links__link"><a href="#">Biografia</a></li>
-                <li class="nav__links__link"><a href="#">Trabajos</a></li>
-                <li class="nav__links__link"><a href="#">Posteos</a></li>
-                <li class="nav__links__link"><a href="#">Contacto</a></li>
+                <li class="nav__links__link"><a href="/biography">Biografia</a></li>
+                <li class="nav__links__link"><a href="/projects">Trabajos</a></li>
+                <li class="nav__links__link"><a href="/">Posteos</a></li>
+                <li class="nav__links__link"><a href="/contact">Contacto</a></li>
             </ul>
         </div>
 
@@ -35,7 +35,7 @@
 
     <div class="top-bar">
         <div class="top-bar__loggin">
-            <a href="./registro.html" class="register">Registrarse</a>
+            <a href="./signUp" class="register">Registrarse</a>
             <a href="#" class="button">Ingresar</a>
         </div>
     </div>
@@ -108,7 +108,7 @@
                             </div>
 
                             <div class="post__header__hashtags">
-                                <p>#<% article.theme %> </p>
+                                <p># <%= article.theme  %> </p>
                             </div>
 
                         </div>
