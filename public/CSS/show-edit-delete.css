@@ -1,0 +1,30 @@
+.edit-goBack{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.btn-edit{
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+}
+
+.btn-goBack{
+    text-decoration: none;
+    color: white;
+
+}
+
+.btn-delete{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(189, 0, 0);
+    margin-top: 20px;
+    border-style: none;
+}
+
+.btn-delete:hover{
+    background-color: rgb(255, 0, 0);
+}
+

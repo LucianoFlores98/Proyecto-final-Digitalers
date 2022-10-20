@@ -7,6 +7,7 @@ const signUpRouter = require('../routes/signUp')
 const biographyRouter = require('../routes/biography')
 const contactRouter = require('../routes/contact')
 const projectsRouter = require('../routes/projects')
+const logInRouter = require('../routes/logIn')
 const methodOverride = require('method-override')
 
 const app = express()
@@ -34,6 +35,8 @@ mongoose
 app.use('/articles', articleRouter);
 
 app.use('/signUp',signUpRouter);
+
+app.use('/logIn',logInRouter);
 
 app.use('/biography', biographyRouter);
 

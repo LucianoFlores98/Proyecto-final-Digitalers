@@ -36,7 +36,7 @@
     <div class="top-bar">
         <div class="top-bar__loggin">
             <a href="./signUp" class="register">Registrarse</a>
-            <a href="#" class="button">Ingresar</a>
+            <a href="./logIn" class="button">Ingresar</a>
         </div>
     </div>
 
@@ -114,11 +114,11 @@
                         </div>
 
                         <div class="post__content">
-                            <p> <%= article.markdown  %>  </p>
+                            <%= article.markdown  %>
                         </div>
 
                         <div class="post__footer">
-                            <a href="#">...seguir leyendo</a>
+                            <a href="./articles/<%= article.slug %>">...Ver Más</a>
                         </div>
                 </div>
                 <% }) %>
